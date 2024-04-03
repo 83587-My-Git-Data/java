@@ -7,10 +7,10 @@ public class Program02 {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.println("Enter the first number");
-		if(sc.hasNextDouble()) {
+		if(sc.hasNextDouble() && !sc.hasNextInt()) {
 			num1 = sc.nextDouble();
-			System.out.println("Enter the first number");
-			if(sc.hasNextDouble()) {
+			System.out.println("Enter the second number");
+			if(sc.hasNextDouble() && !sc.hasNextInt()) {
 				num2 = sc.nextDouble();
 				double avg; 
 				avg = (num1 + num2)/2;
